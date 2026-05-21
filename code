@@ -69,7 +69,7 @@ while True:
                 result = divide(num1, num2)
 
             elif choice == '5':
-                result = modulus(num1, num2)
+                result = modulus(num5, num6)
 
             elif choice == '6':
                 result = power(num1, num2)
@@ -84,3 +84,16 @@ while True:
 
     except Exception as e:
         print(f"Unexpected Error: {e}")
+# Scientific Buttons
+scientific_buttons = [
+    ('sin', lambda: scientific("sin")),
+    ('cos', lambda: scientific("cos")),
+    ('tan', lambda: scientific("tan")),
+    ('sqrt', lambda: scientific("sqrt")),
+    ('log', lambda: scientific("log")),
+    ('ln', lambda: scientific("ln")),
+    ('x²', lambda: scientific("square")),
+    ('x³', lambda: scientific("cube")),
+    ('n!', lambda: scientific("factorial")),
+]
+
